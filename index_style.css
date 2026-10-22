@@ -402,7 +402,7 @@ a {
     border-radius: 15px;
 }
 
-#h_p{
+#h_morada{
     background-color: color-mix(
         in srgb,
         var(--color2) var(--opacidad-fondo),
@@ -410,7 +410,7 @@ a {
     );
 }
 
-#h_d{
+#h_verde{
     background-color: color-mix(
         in srgb,
         var(--color-extra2) var(--opacidad-fondo),
@@ -418,17 +418,10 @@ a {
     );
 }
 
-#h_w{
+#h_coral{
     background-color: color-mix(
         in srgb,
         var(--color-extra1) var(--opacidad-fondo),
-        transparent
-    );
-}
-#h_o{
-    background-color: color-mix(
-        in srgb,
-        var(--color2) var(--opacidad-fondo),
         transparent
     );
 }
@@ -482,25 +475,21 @@ a {
     padding: 4px 9px 4px 9px;
 }
 
-#h_p li{
+#h_morada li{
     background-color: var(--color2);
     border: 1px solid var(--color2);
 }
 
-#h_d li{
+#h_verde li{
     background-color: var(--color-extra2);
 
 }
 
-#h_w li{
+#h_coral li{
     background-color: var(--color-extra1);
 
 }
 
-#h_o li{
-    background-color: var(--color2);
-
-}
 
 /* CONTACTO */
 
@@ -707,7 +696,6 @@ a {
         width: 100%;
     }
 
-    
 
     /* FORMACIÓN */
     .div_f {

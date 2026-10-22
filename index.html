@@ -13,565 +13,1095 @@
 
 <body>
      <!-- cambio de idioma -->
-     <div>
-          
+     <div id="botones_idioma">
+          <button type="button" class="activo" onclick="cambiarIdioma('es')"> ES </button>
+          <button type="button" onclick="cambiarIdioma('en')"> EN </button>
      </div>     
      
-     <!-- presentacion -->
-     <div id="presentacion" class="seccion">
+     <div id="español">
+          <!-- presentacion -->
+          <div id="presentacion" class="seccion">
 
-          <div id="i_pre" class="div_pre">
-               <p>HOLA, SOY</p>
+               <div id="i_pre" class="div_pre">
+                    <p>HOLA, SOY</p>
 
-               <div id="nombre">
-                    <h1>
-                         María Dolores
-                         <span>Lola</span>
-                         <br>
-                         Gutiérrez Rangel
-                    </h1>
+                    <div id="nombre">
+                         <h1>
+                              María Dolores
+                              <span>Lola</span>
+                              <br>
+                              Gutiérrez Rangel
+                         </h1>
+                    </div>
+
+               <p>
+                    Graduada en Matemáticas por la Universidad de Extremadura, con experiencia internacional en la Universidade de Coimbra.
+               </p> 
+
+               <p>
+                    Apasionada de la programación.
+               </p> 
+
+               <p>
+                    Gran capacidad para la resolución de problemas complejos y buena
+                    adaptación a cualquier entorno.
+               </p> 
+
+               <p>
+                    Facilidad y rapidez para el aprendizaje de nuevas funciones laborales.
+               </p> 
+
+               <p>Responsable, eficiente y productiva.
+               </p>
+
+               <p>
+                    Me interesa trabajar en proyectos que supongan un reto y que me permitan seguir aprendiendo.
+               </p>
+
+               <div>
+                    <a href="#proyectos" class="boton_color">Ver proyectos</a>
+                    <a href="CV_MD_GUTIERREZRANGEL.pdf" download class="boton_blanco">Descargar CV</a>
                </div>
 
-          <p>
-               Graduada en Matemáticas por la Universidad de Extremadura, con experiencia internacional en la Universidade de Coimbra.
-          </p> 
-
-          <p>
-               Apasionada de la programación.
-          </p> 
-
-          <p>
-               Gran capacidad para la resolución de problemas complejos y buena
-               adaptación a cualquier entorno.
-          </p> 
-
-          <p>
-               Facilidad y rapidez para el aprendizaje de nuevas funciones laborales.
-          </p> 
-
-          <p>Responsable, eficiente y productiva.
-          </p>
-
-          <p>
-               Me interesa trabajar en proyectos que supongan un reto y que me permitan seguir aprendiendo.
-          </p>
-
-          <div>
-               <a href="#proyectos" class="boton_color">Ver proyectos</a>
-               <a href="CV_MD_GUTIERREZRANGEL.pdf" download class="boton_blanco">Descargar CV</a>
-          </div>
-
-          </div>
-
-          <div id="d_pre" class="div_pre">
-               <img src ="img/fondo1.png" id="fondo1">
-               <img src ="img/cv.jpeg" id="foto_cv">
-          </div>
-     </div>
-     
-     <!-- proyectos -->
-     <div id="proyectos" class="seccion">
-          <h2>Proyectos:</h2>
-
-          <div id="caja">
-
-          <!-- proyecto 3 -->
-          <div class="div_proyecto">  
-               <!-- tamaño imagen 775x620 (5:4) -->     
-               <img src ="img/img_p3.png" class="img_p">
-
-               <h3>
-                    Diseño y Desarrollo de Página Web Personal
-               </h3>
-               <h4>
-                    Proyecto personal – 2026
-               </h4>
-
-               <p>
-                    Diseño y desarrollo de una página web personal para presentar en detalle los proyectos realizados, sus características y las tecnologías utilizadas.
-                    Permite acceder a los repositorios de cada proyecto en GitHub, visitar mis perfiles de GitHub y LinkedIn, y descargar mi currículum vitae.
-               </p>
-
-               <ul class="lista_circulos">
-                    <li>Diseño Web</li>
-                    <li>Desarrollo Frontend</li>
-                    <li>Diseño Responsive</li>
-               </ul>
-
-              <button type="button" class="boton_pro" onclick="abrirProyecto(3)">Ver proyecto →</button> 
-              
-          </div>     
-
-          <!-- proyecto 2 -->
-          <div class="div_proyecto">  
-               <img src ="img/img_p2.png" class="img_p">
-
-               <h3>
-                    Trabajo Fin de Grado
-               </h3>
-               <h4>
-                    Universidad de Extremadura - 2026
-               </h4>
-
-               <p>
-                    Desarrollo de un sistema para optimizar los horarios universitarios minimizando las coincidencias de clases entre estudiantes. El proyecto combina modelización matemática, métodos heurísticos, creación y gestión
-                    de bases de datos, y desarrollo web.
-               </p>
-
-               <ul class="lista_circulos">
-                    <li>Matemáticas aplicadas</li>
-                    <li>Optimización</li>
-                    <li>Algoritmos heurísticos</li>
-                    <li>R/RStudio</li>
-                    <li>Problemas de planificación</li>
-                    <li>Programación entera</li>
-                    <li>Bases de Datos</li>
-               </ul>
-
-              <button type="button" class="boton_pro" onclick="abrirProyecto(2)">Ver proyecto →</button> 
-              
-          </div>
-
-          <!-- proyecto 1 -->
-          <div class="div_proyecto">
-               <img src ="img/img_p1.png" class="img_p">
-               <h3>
-                    Proyecto "Programação Avançada"
-               </h3>
-               <h4>
-                    Universidade de Coimbra - 2024
-               </h4>
-               <p>
-                    Desarrollo, junto con una compañera, de una aplicación web interactiva para explorar la historia de las matemáticas mediante una línea temporal conectada a una base de datos. La aplicación permite filtrar matemáticos por 
-                    diferentes características, consultar información detallada y gestionar los datos mediante un panel de edición.
-               </p>
-
-               <ul class="lista_circulos">
-                    <li>Base de Datos</li>
-                    <li>Interfaz interactiva</li>
-               </ul>
-
-               <button type="button" class="boton_pro" onclick="abrirProyecto(1)">Ver proyecto →</button> 
-               
-
-          </div>
-
-          </div>       
-     </div>
-
-     <!-- popup 3-->
-     <div id="popup_proyecto3" class="popup" aria-hidden="true">
-          <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="popup_titulo">
-
-               <p class="popup_etiqueta">PORTFOLIO WEB PERSONAL · 2026</p>
-
-               <h2 id="popup_titulo">
-                    Diseño y Desarrollo de Página Web Personal
-               </h2>
-
-               <p>
-                    Esta página web ha sido diseñada y desarrollada para presentar el perfil académico y profesional, así como mostrar
-                    en detalle los proyectos realizados. Su objetivo es reunir en un único espacio toda la información sobre formación,
-                    trabajos y habilidades adquiridas, facilitando el acceso a los proyectos y a perfiles profesionales.
-               </p>
-
-               <h3>Funcionalidades:</h3>
-               <ul>
-                    <li>
-                         <p>Presentación de proyectos:</p>
-                         Consulta detallada de cada proyecto, incluyendo su descripción, características y tecnologías utilizadas.
-                    </li>
-
-                    <li>
-                         <p>Perfil profesional:</p>
-                         Acceso a mis perfiles de GitHub y LinkedIn para conocer mejor mi trayectoria y actividad.
-                    </li>
-
-                    <li>
-                         <p>Descarga del currículum:</p>
-                         Opción para descargar mi CV y consultar mi formación y experiencia.
-                    </li>
-
-                    <li>
-                         <p>Diseño adaptable::</p>
-                         Interfaz organizada para facilitar la navegación y la consulta de los contenidos.
-                    </li>
-               </ul>
-
-               <h3>Tecnologías utilizadas</h3>
-               <ul class="lista_circulos">
-                    <li>HTML </li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-               </ul>
-
-
-               <div class="popup_acciones">
-                    <button type="button"
-                              class="boton-popup boton-cerrar"
-                              onclick="cerrarProyecto(3)">
-                         Cerrar
-                    </button>
-
-                    <a class="boton-popup boton-codigo"
-                         href="https://github.com/lolaguti/pagina_personal"
-                         target="_blank"
-                         rel="noopener noreferrer">
-                         Ver código en GitHub ↗
-                    </a>
                </div>
 
-          </div>
-     </div>
-
-     <!-- popup 2-->
-     <div id="popup_proyecto2" class="popup" aria-hidden="true">
-          <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="popup_titulo">
-
-               <p class="popup_etiqueta">TRABAJO FIN DE GRADO · 2026</p>
-
-               <h2 id="popup_titulo">
-                    Optimización de horarios
-               </h2>
-
-               <p>
-                    ¿Cómo se pueden organizar los horarios universitarios para reducir las coincidencias entre las
-                    asignaturas en las que está matriculado cada estudiante?
-               </p>
-               <p>     
-                    Este proyecto aborda el problema mediante modelización matemática y algoritmos heurísticos,
-                    con el objetivo de mejorar la planificación de horarios de los grados en Matemáticas, Física
-                    y Estadística, y del doble grado en Matemáticas y Estadística de la Universidad de Extremadura.
-               </p>
-
-               <h3>Proceso:</h3>
-               <ul>
-                    <li>
-                         <p>Modelización y optimización:</p>
-                         Formulación del problema mediante programación entera y definición de las restricciones de planificación.
-                    </li>
-
-                    <li>
-                         <p>Experimentación con heurísticas:</p>
-                         Implementación y comparación de algoritmos genéticos, enfriamiento simulado y búsqueda
-                         tabú en R. El análisis experimental identificó el enfriamiento simulado como el método
-                         más adecuado de los estudiados para este problema.
-                    </li>
-
-                    <li>
-                         <p>Base de datos y aplicación web:</p>
-                         Diseño de una base de datos para gestionar estudiantes, profesorado y asignaturas, e
-                         integración de los resultados en una aplicación web que permite consultar horarios
-                         individualizados.
-                    </li>
-               </ul>
-
-               <div class="div_img">
-                    <img src ="img/TFG1.jpg" alt="Base de datos: Modelo E-R">
-                    <img src ="img/TFG2.jpg" alt="">
-                    <img src ="img/TFG3.jpg" >
+               <div id="d_pre" class="div_pre">
+                    <img src ="img/fondo1.png" id="fondo1">
+                    <img src ="img/cv.jpeg" id="foto_cv">
                </div>
-
-               <h3>Resultados</h3>
-               <p>
-                    En el ejemplo estudiado en la memoria, las coincidencias del horario de un estudiante de
-                    Matemáticas se redujeron de 5 a 2 tras la optimización.
-               </p>
-
-               <h3>Tecnologías utilizadas</h3>
-               <ul class="lista_circulos">
-                    <li>R / RStudio</li>
-                    <li>MySQL</li>
-                    <li>PHP</li>
-                    <li>HTML </li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-               </ul>
-
-
-               <div class="popup_acciones">
-                    <button type="button"
-                              class="boton-popup boton-cerrar"
-                              onclick="cerrarProyecto(2)">
-                         Cerrar
-                    </button>
-
-                    <a class="boton-popup boton-codigo"
-                         href="https://github.com/lolaguti/optimizacion-horarios-tfg"
-                         target="_blank"
-                         rel="noopener noreferrer">
-                         Ver código en GitHub ↗
-                    </a>
-               </div>
-
-          </div>
-     </div>
-
-     <!-- popup 1-->
-     <div id="popup_proyecto1" class="popup" aria-hidden="true">
-          <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="popup_titulo1">
-               <p class="popup_etiqueta">
-                    PROYECTO "PROGRAMAÇÃO AVANÇADA" · 2024
-               </p>
-
-               <h2 id="popup_titulo1">
-                    Linha temporal de matemáticos famosos
-               </h2>
-
-               <p>
-                    Desarrollada junto con una compañera en la asignatura
-                    Programação Avançada de la Universidade de Coimbra,
-                    esta aplicación web permite explorar un archivo de
-                    matemáticos famosos, consultar sus biografías y descubrir
-                    sus nacionalidades, áreas de estudio, instituciones y
-                    contribuciones a las matemáticas.
-               </p>
-
-               <h3>Funcionalidades:</h3>
-
-               <ul>
-                    <li>
-                         <p>Visualización interactiva:</p>
-                         Una línea temporal que organiza a los matemáticos
-                         cronológicamente y permite consultar información
-                         detallada de cada uno.
-                    </li>
-
-                    <li>
-                         <p>Búsqueda y filtros:</p>
-                         Búsqueda por nombre, fechas, nacionalidad, áreas de
-                         estudio, instituciones y localización geográfica.
-                    </li>
-
-                    <li>
-                         <p>Gestión de datos:</p>
-                         Un panel privado para que los editores puedan añadir,
-                         modificar y eliminar matemáticos y gestionar sus
-                         relaciones con instituciones y contribuciones.
-                    </li>
-
-                    <li>
-                         <p>Exportación a PDF:</p>
-                         Generación de una versión imprimible de la línea
-                         temporal y de los resultados de búsqueda mediante
-                         LaTeX.
-                    </li>
-               </ul>
-
-               <div class="div_img">
-                    <img src="img/PA1.jpg" alt="Página principal con la línea temporal">
-                    <img src="img/PA2.jpg" alt="Panel de edición de la aplicación">
-               </div>
-
-               <h3>Tecnologías utilizadas</h3>
-
-               <ul class="lista_circulos">
-                    <li>MySQL</li>
-                    <li>PHP</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>LaTeX</li>
-               </ul>
-
-               <div class="popup_acciones">
-                    <button type="button"
-                              class="boton-popup boton-cerrar"
-                              onclick="cerrarProyecto(1)">
-                         Cerrar
-                    </button>
-
-                    <a class="boton-popup boton-codigo"
-                         href="https://github.com/lolaguti/linha-temporal-pa"
-                         target="_blank"
-                         rel="noopener noreferrer">
-                         Ver código en GitHub ↗
-                    </a>
-               </div>
-
-          </div>
-     </div>
-     
-     <!-- formacion -->
-     <div id="formacion" class="seccion">
-          <h2>Formación:</h2>
-
-          <div class="div_f" id="f3">
-               <h3>
-                    Grado en Matemáticas
-               </h3>
-               <h4>
-                    Universidad de Extremadura (2017-2026)
-               </h4>
-               <p>
-                    Graduada en Matemáticas por la Universidad de Extremadura, con formación en matemáticas puras y aplicadas,
-                    incluyendo análisis matemático, álgebra, geometría, probabilidad y estadística, ecuaciones diferenciales y
-                    métodos numéricos. Destaca mi formación en estadística aplicada y optimización, con matrícula de honor en
-                    "Métodos Estadísticos Aplicados" y buenos resultados en "Investigación Operativa" y "Métodos Numéricos".
-                    Asimismo, adquirí conocimientos de programación y herramientas computacionales aplicadas a la resolución
-                    de problemas matemáticos. Esta formación me ha permitido desarrollar una sólida capacidad analítica y
-                    abordar problemas desde perspectivas tanto matemáticas como computacionales.
-               </p>
-               <p>
-                    Durante las prácticas curriculares en Caja Rural de Almendralejo, participé en el desarrollo y
-                    mantenimiento de aplicaciones de software, implementando nuevas funcionalidades, corrigiendo incidencias y
-                    desarrollando procesos de automatización. Esta experiencia me permitió aplicar conocimientos de
-                    programación a problemas reales en un entorno profesional.
-
-
-               </p>
-          </div>
-
-          <div class="div_f" id="f2">
-               <h3>
-                    Erasmus +
-               </h3>
-               <h4>
-                    Universidade de Coimbra (2023-2024)
-               </h4>
-               <p>
-                   Estancia académica de nueve meses en la Universidade de Coimbra (Portugal), durante el curso 2023–2024,
-                   en el marco del programa Erasmus+. Durante esta experiencia amplié mi formación matemática, cursando
-                   asignaturas de nivel de máster en Matemática Pura y profundizando en áreas como el análisis matemático,
-                   la modelización, la optimización y la topología. Destaca especialmente el resultado obtenido en
-                   "Programação Avançada", con una calificación equivalente a matrícula de honor,
-                   seguido de "Modelação Matemática", con una nota equivalente a 10 en el sistema español.
-                   Esta experiencia reforzó mi interés por la intersección entre las matemáticas y la programación,
-                   al tiempo que contribuyó a mejorar mi fluidez en portugués y mi capacidad de adaptación a un entorno
-                   académico internacional.
-               </p>
-          </div>
-
-          <div class="div_f" id="f1">
-               <h3>
-                    Curso "Habilidades Emprendedoras"
-               </h3>
-               <h4>
-                    Universidad de Extremadura (2022-2023)
-               </h4>
-               <p>
-                    Formación complementaria orientada al desarrollo de habilidades emprendedoras, la iniciativa y la identificación de oportunidades para transformar ideas en proyectos.
-               </p>
           </div>
           
-     </div>
+          <!-- proyectos -->
+          <div id="proyectos" class="seccion">
+               <h2>Proyectos:</h2>
 
-     <!-- habilidades -->
-     <div id="habilidades" class="seccion">
-          <h2>Habilidades:</h2>
+               <div id="caja">
 
-          <div class="div_h" id="h_morada">
+               <!-- proyecto 3 -->
+               <div class="div_proyecto">  
+                    <!-- tamaño imagen 775x620 (5:4) -->     
+                    <img src ="img/img_p3.png" class="img_p">
 
-               <div id="div_icono1">
-                    <img src ="img/icono_i.png">
-               </div>
-               
-               <div class="lista_i">
                     <h3>
-                         Idiomas
+                         Diseño y Desarrollo de Página Web Personal
                     </h3>
+                    <h4>
+                         Proyecto personal – 2026
+                    </h4>
 
-                    <ul>
-                         <li>Español (Nativo)</li>
-                         <li>Inglés (Avanzado)</li>
-                         <li>Portugués (Intermedio)</li>
-                         <li>Francés (Básico)</li>
+                    <p>
+                         Diseño y desarrollo de una página web personal para presentar en detalle los proyectos realizados, sus características y las tecnologías utilizadas.
+                         Permite acceder a los repositorios de cada proyecto en GitHub, visitar los perfiles de GitHub y LinkedIn, y descargar el currículum vitae.
+                    </p>
+
+                    <ul class="lista_circulos">
+                         <li>Diseño Web</li>
+                         <li>Desarrollo Frontend</li>
+                         <li>Diseño Responsive</li>
                     </ul>
+
+               <button type="button" class="boton_pro" onclick="abrirProyecto(3)">Ver proyecto →</button> 
+               
+               </div>     
+
+               <!-- proyecto 2 -->
+               <div class="div_proyecto">  
+                    <img src ="img/img_p2.png" class="img_p">
+
+                    <h3>
+                         Trabajo Fin de Grado
+                    </h3>
+                    <h4>
+                         Universidad de Extremadura - 2026
+                    </h4>
+
+                    <p>
+                         Desarrollo de un sistema para optimizar los horarios universitarios minimizando las coincidencias de clases entre estudiantes. El proyecto combina modelización matemática, métodos heurísticos, creación y gestión
+                         de bases de datos, y desarrollo web.
+                    </p>
+
+                    <ul class="lista_circulos">
+                         <li>Matemáticas aplicadas</li>
+                         <li>Optimización</li>
+                         <li>Algoritmos heurísticos</li>
+                         <li>R/RStudio</li>
+                         <li>Problemas de planificación</li>
+                         <li>Programación entera</li>
+                         <li>Bases de Datos</li>
+                    </ul>
+
+               <button type="button" class="boton_pro" onclick="abrirProyecto(2)">Ver proyecto →</button> 
+               
                </div>
+
+               <!-- proyecto 1 -->
+               <div class="div_proyecto">
+                    <img src ="img/img_p1.png" class="img_p">
+                    <h3>
+                         Proyecto "Programação Avançada"
+                    </h3>
+                    <h4>
+                         Universidade de Coimbra - 2024
+                    </h4>
+                    <p>
+                         Desarrollo, junto con una compañera, de una aplicación web interactiva para explorar la historia de las matemáticas mediante una línea temporal conectada a una base de datos. La aplicación permite filtrar matemáticos por 
+                         diferentes características, consultar información detallada y gestionar los datos mediante un panel de edición.
+                    </p>
+
+                    <ul class="lista_circulos">
+                         <li>Base de Datos</li>
+                         <li>Interfaz interactiva</li>
+                    </ul>
+
+                    <button type="button" class="boton_pro" onclick="abrirProyecto(1)">Ver proyecto →</button> 
+                    
+
+               </div>
+
+               </div>       
           </div>
 
-          <div class="div_h" id="h_verde">
+          <!-- popup 3 -->
+          <div id="popup_proyecto3" class="popup" aria-hidden="true">
+               <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="popup_titulo">
 
-               <div id="div_icono1">
-                    <img src ="img/icono_p.png">
-               </div>
-               
-               <div class="lista_h">
-                    <h3>
-                         Programación
-                    </h3>
+                    <p class="popup_etiqueta">PORTFOLIO WEB PERSONAL · 2026</p>
 
+                    <h2 id="popup_titulo">
+                         Diseño y Desarrollo de Página Web Personal
+                    </h2>
+
+                    <p>
+                         Esta página web ha sido diseñada y desarrollada para presentar el perfil académico y profesional, así como mostrar
+                         en detalle los proyectos realizados. Su objetivo es reunir en un único espacio toda la información sobre formación,
+                         trabajos y habilidades adquiridas, facilitando el acceso a los proyectos y a perfiles profesionales.
+                    </p>
+
+                    <h3>Funcionalidades:</h3>
                     <ul>
-                         <li>Python</li>
-                         <li>Java</li>
-                         <li>PHP</li>
-                         <li>Fortran</li>
+                         <li>
+                              <p>Presentación de proyectos:</p>
+                              Consulta detallada de cada proyecto, incluyendo su descripción, características y tecnologías utilizadas.
+                         </li>
+
+                         <li>
+                              <p>Perfil profesional:</p>
+                              Acceso a los perfiles de GitHub y LinkedIn para conocer mejor mi trayectoria y actividad.
+                         </li>
+
+                         <li>
+                              <p>Descarga del currículum:</p>
+                              Opción para descargar mi CV y consultar mi formación y experiencia.
+                         </li>
+
+                         <li>
+                              <p>Diseño adaptable:</p>
+                              Interfaz organizada para facilitar la navegación y la consulta de los contenidos.
+                         </li>
                     </ul>
-               </div>
-          </div>
 
-          <div class="div_h" id="h_coral">
-               <div id="div_icono1">
-                    <img src ="img/icono_d.png">
-               </div>
-               
-               <div class="lista_h">
-                    <h3>
-                         Datos y estadística
-                    </h3>
-
-                    <ul>
-                         <li>SQL</li>
-                         <li>R</li>
-                         <li>RStudio</li>
-                         <li>Jamovi</li>
-                         <li>MATLAB</li>
-                         <li>Excel</li>
-                    </ul>
-               </div>
-          </div>
-
-          <div class="div_h" id="h_morada">
-               <div id="div_icono1">
-                    <img src ="img/icono_w.png">
-               </div>
-               
-               <div class="lista_h">
-                    <h3>
-                         Web
-                    </h3>
-
-                    <ul>
-                         <li>HTML</li>
+                    <h3>Tecnologías utilizadas</h3>
+                    <ul class="lista_circulos">
+                         <li>HTML </li>
                          <li>CSS</li>
                          <li>JavaScript</li>
                     </ul>
+
+
+                    <div class="popup_acciones">
+                         <button type="button"
+                                   class="boton-popup boton-cerrar"
+                                   onclick="cerrarProyecto(3)">
+                              Cerrar
+                         </button>
+
+                         <a class="boton-popup boton-codigo"
+                              href="https://github.com/lolaguti/pagina_personal"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              Ver código en GitHub ↗
+                         </a>
+                    </div>
+
                </div>
           </div>
 
-          <div class="div_h" id="h_verde">
-               <div id="div_icono1">
-                    <img src ="img/icono_o.png">
+          <!-- popup 2 -->
+          <div id="popup_proyecto2" class="popup" aria-hidden="true">
+               <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="popup_titulo">
+
+                    <p class="popup_etiqueta">TRABAJO FIN DE GRADO · 2026</p>
+
+                    <h2 id="popup_titulo">
+                         Optimización de horarios
+                    </h2>
+
+                    <p>
+                         ¿Cómo se pueden organizar los horarios universitarios para reducir las coincidencias entre las
+                         asignaturas en las que está matriculado cada estudiante?
+                    </p>
+                    <p>     
+                         Este proyecto aborda el problema mediante modelización matemática y algoritmos heurísticos,
+                         con el objetivo de mejorar la planificación de horarios de los grados en Matemáticas, Física
+                         y Estadística, y del doble grado en Matemáticas y Estadística de la Universidad de Extremadura.
+                    </p>
+
+                    <h3>Proceso:</h3>
+                    <ul>
+                         <li>
+                              <p>Modelización y optimización:</p>
+                              Formulación del problema mediante programación entera y definición de las restricciones de planificación.
+                         </li>
+
+                         <li>
+                              <p>Experimentación con heurísticas:</p>
+                              Implementación y comparación de algoritmos genéticos, enfriamiento simulado y búsqueda
+                              tabú en R. El análisis experimental identificó el enfriamiento simulado como el método
+                              más adecuado de los estudiados para este problema.
+                         </li>
+
+                         <li>
+                              <p>Base de datos y aplicación web:</p>
+                              Diseño de una base de datos para gestionar estudiantes, profesorado y asignaturas, e
+                              integración de los resultados en una aplicación web que permite consultar horarios
+                              individualizados.
+                         </li>
+                    </ul>
+
+                    <div class="div_img">
+                         <img src ="img/TFG1.jpg" alt="Base de datos: Modelo E-R">
+                         <img src ="img/TFG2.jpg" alt="">
+                         <img src ="img/TFG3.jpg" >
+                    </div>
+
+                    <h3>Resultados</h3>
+                    <p>
+                         En el ejemplo estudiado en la memoria, las coincidencias del horario de un estudiante de
+                         Matemáticas se redujeron de 5 a 2 tras la optimización.
+                    </p>
+
+                    <h3>Tecnologías utilizadas</h3>
+                    <ul class="lista_circulos">
+                         <li>R / RStudio</li>
+                         <li>MySQL</li>
+                         <li>PHP</li>
+                         <li>HTML </li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                    </ul>
+
+
+                    <div class="popup_acciones">
+                         <button type="button"
+                                   class="boton-popup boton-cerrar"
+                                   onclick="cerrarProyecto(2)">
+                              Cerrar
+                         </button>
+
+                         <a class="boton-popup boton-codigo"
+                              href="https://github.com/lolaguti/optimizacion-horarios-tfg"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              Ver código en GitHub ↗
+                         </a>
+                    </div>
+
                </div>
-               
-               <div class="lista_h">
-                    <h3>
-                         Otros
-                    </h3>
+          </div>
+
+          <!-- popup 1 -->
+          <div id="popup_proyecto1" class="popup" aria-hidden="true">
+               <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="popup_titulo1">
+                    <p class="popup_etiqueta">
+                         PROYECTO "PROGRAMAÇÃO AVANÇADA" · 2024
+                    </p>
+
+                    <h2 id="popup_titulo1">
+                         Línea temporal de matemáticos famosos
+                    </h2>
+
+                    <p>
+                         Desarrollada junto con una compañera en la asignatura
+                         Programação Avançada de la Universidade de Coimbra,
+                         esta aplicación web permite explorar un archivo de
+                         matemáticos famosos, consultar sus biografías y descubrir
+                         sus nacionalidades, áreas de estudio, instituciones y
+                         contribuciones a las matemáticas.
+                    </p>
+
+                    <h3>Funcionalidades:</h3>
 
                     <ul>
-                         <li>LaTeX</li>
-                         <li>Photoshop</li>
+                         <li>
+                              <p>Visualización interactiva:</p>
+                              Una línea temporal que organiza a los matemáticos
+                              cronológicamente y permite consultar información
+                              detallada de cada uno.
+                         </li>
+
+                         <li>
+                              <p>Búsqueda y filtros:</p>
+                              Búsqueda por nombre, fechas, nacionalidad, áreas de
+                              estudio, instituciones y localización geográfica.
+                         </li>
+
+                         <li>
+                              <p>Gestión de datos:</p>
+                              Un panel privado para que los editores puedan añadir,
+                              modificar y eliminar matemáticos y gestionar sus
+                              relaciones con instituciones y contribuciones.
+                         </li>
+
+                         <li>
+                              <p>Exportación a PDF:</p>
+                              Generación de una versión imprimible de la línea
+                              temporal y de los resultados de búsqueda mediante
+                              LaTeX.
+                         </li>
                     </ul>
+
+                    <div class="div_img">
+                         <img src="img/PA1.jpg" alt="Página principal con la línea temporal">
+                         <img src="img/PA2.jpg" alt="Panel de edición de la aplicación">
+                    </div>
+
+                    <h3>Tecnologías utilizadas</h3>
+
+                    <ul class="lista_circulos">
+                         <li>MySQL</li>
+                         <li>PHP</li>
+                         <li>HTML</li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                         <li>LaTeX</li>
+                    </ul>
+
+                    <div class="popup_acciones">
+                         <button type="button"
+                                   class="boton-popup boton-cerrar"
+                                   onclick="cerrarProyecto(1)">
+                              Cerrar
+                         </button>
+
+                         <a class="boton-popup boton-codigo"
+                              href="https://github.com/lolaguti/linha-temporal-pa"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              Ver código en GitHub ↗
+                         </a>
+                    </div>
+
+               </div>
+          </div>
+          
+          <!-- formacion -->
+          <div id="formacion" class="seccion">
+               <h2>Formación:</h2>
+
+               <div class="div_f" id="f3">
+                    <h3>
+                         Grado en Matemáticas
+                    </h3>
+                    <h4>
+                         Universidad de Extremadura (2017-2026)
+                    </h4>
+                    <p>
+                         Graduada en Matemáticas por la Universidad de Extremadura, con formación en matemáticas puras y aplicadas,
+                         incluyendo análisis matemático, álgebra, geometría, probabilidad y estadística, ecuaciones diferenciales y
+                         métodos numéricos. Destaca mi formación en estadística aplicada y optimización, con matrícula de honor en
+                         "Métodos Estadísticos Aplicados" y buenos resultados en "Investigación Operativa" y "Métodos Numéricos".
+                         Asimismo, adquirí conocimientos de programación y herramientas computacionales aplicadas a la resolución
+                         de problemas matemáticos. Esta formación me ha permitido desarrollar una sólida capacidad analítica y
+                         abordar problemas desde perspectivas tanto matemáticas como computacionales.
+                    </p>
+                    <p>
+                         Durante las prácticas curriculares en Caja Rural de Almendralejo, participé en el desarrollo y
+                         mantenimiento de aplicaciones de software, implementando nuevas funcionalidades, corrigiendo incidencias y
+                         desarrollando procesos de automatización. Esta experiencia me permitió aplicar conocimientos de
+                         programación a problemas reales en un entorno profesional.
+
+
+                    </p>
+               </div>
+
+               <div class="div_f" id="f2">
+                    <h3>
+                         Erasmus +
+                    </h3>
+                    <h4>
+                         Universidade de Coimbra (2023-2024)
+                    </h4>
+                    <p>
+                    Estancia académica de nueve meses en la Universidade de Coimbra (Portugal), durante el curso 2023–2024,
+                    en el marco del programa Erasmus+. Durante esta experiencia amplié mi formación matemática, cursando
+                    asignaturas de nivel de máster en Matemática Pura y profundizando en áreas como el análisis matemático,
+                    la modelización, la optimización y la topología. Destaca especialmente el resultado obtenido en
+                    "Programação Avançada", con una calificación equivalente a matrícula de honor,
+                    seguido de "Modelação Matemática", con una nota equivalente a 10 en el sistema español.
+                    Esta experiencia reforzó mi interés por la intersección entre las matemáticas y la programación,
+                    al tiempo que contribuyó a mejorar mi fluidez en portugués y mi capacidad de adaptación a un entorno
+                    académico internacional.
+                    </p>
+               </div>
+
+               <div class="div_f" id="f1">
+                    <h3>
+                         Curso "Habilidades Emprendedoras"
+                    </h3>
+                    <h4>
+                         Universidad de Extremadura (2022-2023)
+                    </h4>
+                    <p>
+                         Formación complementaria orientada al desarrollo de habilidades emprendedoras, la iniciativa y la identificación de oportunidades para transformar ideas en proyectos.
+                    </p>
+               </div>
+               
+          </div>
+
+          <!-- habilidades -->
+          <div id="habilidades" class="seccion">
+               <h2>Habilidades:</h2>
+
+               <div class="div_h" id="h_morada">
+
+                    <div id="div_icono1">
+                         <img src ="img/icono_i.png">
+                    </div>
+                    
+                    <div class="lista_i">
+                         <h3>
+                              Idiomas
+                         </h3>
+
+                         <ul>
+                              <li>Español (Nativo)</li>
+                              <li>Inglés (Avanzado)</li>
+                              <li>Portugués (Intermedio)</li>
+                              <li>Francés (Básico)</li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="div_h" id="h_verde">
+
+                    <div id="div_icono1">
+                         <img src ="img/icono_p.png">
+                    </div>
+                    
+                    <div class="lista_h">
+                         <h3>
+                              Programación
+                         </h3>
+
+                         <ul>
+                              <li>Python</li>
+                              <li>Java</li>
+                              <li>PHP</li>
+                              <li>Fortran</li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="div_h" id="h_coral">
+                    <div id="div_icono1">
+                         <img src ="img/icono_d.png">
+                    </div>
+                    
+                    <div class="lista_h">
+                         <h3>
+                              Datos y estadística
+                         </h3>
+
+                         <ul>
+                              <li>SQL</li>
+                              <li>R</li>
+                              <li>RStudio</li>
+                              <li>Jamovi</li>
+                              <li>MATLAB</li>
+                              <li>Excel</li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="div_h" id="h_morada">
+                    <div id="div_icono1">
+                         <img src ="img/icono_w.png">
+                    </div>
+                    
+                    <div class="lista_h">
+                         <h3>
+                              Web
+                         </h3>
+
+                         <ul>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>JavaScript</li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="div_h" id="h_verde">
+                    <div id="div_icono1">
+                         <img src ="img/icono_o.png">
+                    </div>
+                    
+                    <div class="lista_h">
+                         <h3>
+                              Otros
+                         </h3>
+
+                         <ul>
+                              <li>LaTeX</li>
+                              <li>Photoshop</li>
+                         </ul>
+                    </div>
+               </div>
+
+          </div>
+          
+          <!-- contacto -->
+          <div id="contacto" class="seccion">
+               <h2>Contacto</h2>
+
+               <div id="botones_contacto">
+                    <a href="https://www.linkedin.com/in/maria-dolores-gutierrez-rangel-a86b62430">
+                         <img src="img/linkedin.png">
+                         LinkedIn</a>
+                    <a href="https://github.com/lolaguti">
+                         <img src="img/github.png">
+                         GitHub</a>
+               </div>
+
+
+          </div>
+     </div>
+
+     <div id="ingles" hidden>
+          <!-- presentacion -->
+          <div id="en_presentacion" class="seccion">
+
+               <div id="en_i_pre" class="div_pre">
+                    <p>HI, I'M</p>
+
+                    <div id="en_nombre">
+                         <h1>
+                              María Dolores
+                              <span>Lola</span>
+                              <br>
+                              Gutiérrez Rangel
+                         </h1>
+                    </div>
+
+               <p>
+                    Mathematics graduate from the Universidad de Extremadura, with international experience at the Universidade de Coimbra.
+               </p> 
+
+               <p>
+                    Passionate about programming.
+               </p> 
+
+               <p>
+                    Strong problem-solving skills, with the ability to tackle complex challenges and adapt to different working environments.
+               </p> 
+
+               <p>
+                    Quick to learn new skills and take on new responsibilities.
+               </p> 
+
+               <p>
+                    Reliable, efficient, and productive
+               </p>
+
+               <p>
+                    I enjoy working on challenging projects that push me to grow, learn, and develop new skills.
+               </p>
+
+               <div>
+                    <a href="#en_proyectos" class="boton_color">View Projects</a>
+                    <a href="CV_MD_GUTIERREZRANGEL_ingles.pdf" download class="boton_blanco">Download CV</a>
+               </div>
+
+               </div>
+
+               <div id="en_d_pre" class="div_pre">
+                    <img src ="img/fondo1.png" id="en_fondo1">
+                    <img src ="img/cv.jpeg" id="en_foto_cv">
+               </div>
+          </div>
+          
+          <!-- proyectos -->
+          <div id="en_proyectos" class="seccion">
+               <h2>Projects:</h2>
+
+               <div id="en_caja">
+
+               <!-- proyecto 3 -->
+               <div class="div_proyecto">  
+                    <!-- tamaño imagen 775x620 (5:4) -->     
+                    <img src ="img/img_p3.png" class="img_p">
+
+                    <h3>
+                         Personal Website Design and Development
+                    </h3>
+                    <h4>
+                         Personal Project – 2026
+                    </h4>
+
+                    <p>
+                         Designed and developed a personal website to showcase completed projects, highlighting their features and the technologies used. The website provides access to each project's GitHub repository, links to GitHub and LinkedIn profiles, and a downloadable CV.
+                    </p>
+
+                    <ul class="lista_circulos">
+                         <li>Web Design</li>
+                         <li>Frontend Development</li>
+                         <li>Responsive Design</li>
+                    </ul>
+
+               <button type="button" class="boton_pro" onclick="abrirProyectoEn(3)">View Project →</button> 
+               
+               </div>     
+
+               <!-- proyecto 2 -->
+               <div class="div_proyecto">  
+                    <img src ="img/img_p2.png" class="img_p">
+
+                    <h3>
+                         Bachelor's Thesis
+                    </h3>
+                    <h4>
+                         Universidad de Extremadura - 2026
+                    </h4>
+
+                    <p>
+                         Development of a system to optimize university timetables by minimizing class conflicts among students. The project combines mathematical modelling, heuristic methods, database creation and management, and web development.
+                    </p>
+
+                    <ul class="lista_circulos">
+                         <li>Applied Mathematics</li>
+                         <li>Optimization</li>
+                         <li>Heuristic Algorithms</li>
+                         <li>R/RStudio</li>
+                         <li>Scheduling Problems</li>
+                         <li>Integer Programming</li>
+                         <li>Databases</li>
+                    </ul>
+
+               <button type="button" class="boton_pro" onclick="abrirProyectoEn(2)">View Project →</button> 
+               
+               </div>
+
+               <!-- proyecto 1 -->
+               <div class="div_proyecto">
+                    <img src ="img/img_p1.png" class="img_p">
+                    <h3>
+                         "Programação Avançada" Project
+                    </h3>
+                    <h4>
+                         Universidade de Coimbra - 2024
+                    </h4>
+                    <p>
+                         Development, in collaboration with a fellow student, of an interactive web application for exploring the history of mathematics through a timeline connected to a database. The application allows users to filter mathematicians by various criteria, view detailed information, and manage data through an editing interface.
+                    </p>
+
+                    <ul class="lista_circulos">
+                         <li>Database</li>
+                         <li>Interactive User Interface</li>
+                    </ul>
+
+                    <button type="button" class="boton_pro" onclick="abrirProyectoEn(1)">View Project →</button> 
+                    
+
+               </div>
+
+               </div>       
+          </div>
+
+          <!-- popup 3 -->
+          <div id="en_popup_proyecto3" class="popup" aria-hidden="true" >
+               <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="en_popup_titulo">
+
+                    <p class="popup_etiqueta">PERSONAL WEB PORTFOLIO · 2026</p>
+
+                    <h2 id="en_popup_titulo">
+                         Personal Website Design and Development
+                    </h2>
+
+                    <p>
+                         This website was designed and developed to showcase academic and professional background and provide 
+                         a detailed overview of completed projects. The objective is to bring together information about 
+                         education, work, and acquired skills in one place, while providing easy access to projects and 
+                         professional profiles.
+                    </p>
+
+                    <h3>Features:</h3>
+                    <ul>
+                         <li>
+                              <p>Project Showcase:</p>
+                              Detailed information about each project, including its description, features, and technologies used.
+                         </li>
+
+                         <li>
+                              <p>Professional Profiles:</p>
+                              Links to GitHub and LinkedIn profiles to learn more about my background and professional activities.
+                         </li>
+
+                         <li>
+                              <p>CV Download:</p>
+                              An option to download my CV and review my education and experience.
+                         </li>
+
+                         <li>
+                              <p>Responsive Design:</p>
+                              A well-organized interface that provides easy navigation and access to content across different devices.
+                         </li>
+                    </ul>
+
+                    <h3>Technologies Used</h3>
+                    <ul class="lista_circulos">
+                         <li>HTML </li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                    </ul>
+
+
+                    <div class="popup_acciones">
+                         <button type="button"
+                                   class="boton-popup boton-cerrar"
+                                   onclick="cerrarProyectoEn(3)">
+                              Close
+                         </button>
+
+                         <a class="boton-popup boton-codigo"
+                              href="https://github.com/lolaguti/pagina_personal"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              View Code on GitHub ↗
+                         </a>
+                    </div>
+
                </div>
           </div>
 
-     </div>
-     
-     <!-- contacto -->
-     <div id="contacto" class="seccion">
-          <h2>Contacto</h2>
+          <!-- popup 2 -->
+          <div id="en_popup_proyecto2" class="popup" aria-hidden="true" >
+               <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="en_popup_titulo">
 
-          <div id="botones_contacto">
-               <a href="https://www.linkedin.com/in/maria-dolores-gutierrez-rangel-a86b62430">
-                    <img src="img/linkedin.png">
-                    LinkedIn</a>
-               <a href="https://github.com/lolaguti">
-                    <img src="img/github.png">
-                    GitHub</a>
+                    <p class="popup_etiqueta">BACHELOR'S THESIS · 2026</p>
+
+                    <h2 id="en_popup_titulo">
+                         Timetable Optimization
+                    </h2>
+
+                    <p>
+                         How can university timetables be organized to reduce clashes between the courses in which each student is enrolled?
+                    </p>
+                    <p>     
+                         This project addresses the problem through mathematical modelling and heuristic algorithms, aiming to improve timetable planning for the Mathematics, Physics, and Statistics degree programs, as well as the double degree in Mathematics and Statistics at the Universidad de Extremadura.
+                    </p>
+
+                    <h3>Methodology:</h3>
+                    <ul>
+                         <li>
+                              <p>Mathematical Modelling and Optimization:</p>
+                              Formulation of the problem using integer programming and definition of scheduling constraints.
+                         </li>
+
+                         <li>
+                              <p>Heuristic Experimentation:</p>
+                              Implementation and comparison of genetic algorithms, simulated annealing, and tabu search in R. The experimental analysis identified simulated annealing as the most suitable method among those evaluated for this problem.
+                         </li>
+
+                         <li>
+                              <p>Database and Web Application:</p>
+                              Design of a database to manage students, faculty members, and courses, and integration of the results into a web application that allows users to view personalized timetables.
+                         </li>
+                    </ul>
+
+                    <div class="div_img">
+                         <img src ="img/TFG1.jpg" alt="Database: E-R Model">
+                         <img src ="img/TFG2.jpg" alt="">
+                         <img src ="img/TFG3.jpg" >
+                    </div>
+
+                    <h3>Results</h3>
+                    <p>
+                         In the example analyzed in the thesis, timetable clashes for a Mathematics student were reduced from 5 to 2 following optimization.
+                    </p>
+
+                    <h3>Technologies Used</h3>
+                    <ul class="lista_circulos">
+                         <li>R / RStudio</li>
+                         <li>MySQL</li>
+                         <li>PHP</li>
+                         <li>HTML </li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                    </ul>
+
+
+                    <div class="popup_acciones">
+                         <button type="button"
+                                   class="boton-popup boton-cerrar"
+                                   onclick="cerrarProyectoEn(2)">
+                              Close
+                         </button>
+
+                         <a class="boton-popup boton-codigo"
+                              href="https://github.com/lolaguti/optimizacion-horarios-tfg"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              View Code on GitHub ↗
+                         </a>
+                    </div>
+
+               </div>
           </div>
 
+          <!-- popup 1 -->
+          <div id="en_popup_proyecto1" class="popup" aria-hidden="true" >
+               <div class="popup_contenido" role="dialog" aria-modal="true" aria-labelledby="popup_titulo1">
+                    <p class="popup_etiqueta">
+                         "PROGRAMAÇÃO AVANÇADA" PROJECT · 2024
+                    </p>
 
+                    <h2 id="en_popup_titulo1">
+                         Timeline of Famous Mathematicians
+                    </h2>
+
+                    <p>
+                         Developed in collaboration with a fellow student as part of the Advanced Programming course at the University of Coimbra, this web application allows users to explore a collection of famous mathematicians, read their biographies, and discover their nationalities, fields of study, institutions, and contributions to mathematics.
+                    </p>
+
+                    <h3>Features:</h3>
+
+                    <ul>
+                         <li>
+                              <p>Interactive Timeline:</p>
+                              A timeline that organizes mathematicians chronologically and provides detailed information about each individual.
+                         </li>
+
+                         <li>
+                              <p>Search and Filtering:</p>
+                              Search by name, dates, nationality, fields of study, institutions, and geographic location.
+                         </li>
+
+                         <li>
+                              <p>Data Management:</p>
+                              A private editing panel that allows editors to add, modify, and delete mathematicians, as well as manage their relationships with institutions and contributions.
+                         </li>
+
+                         <li>
+                              <p>PDF Export:</p>
+                              Generation of printable versions of the timeline and search results using LaTeX.
+                         </li>
+                    </ul>
+
+                    <div class="div_img">
+                         <img src="img/PA1.jpg" alt="Main page featuring the timeline">
+                         <img src="img/PA2.jpg" alt="Application editing panel">
+                    </div>
+
+                    <h3>Technologies Used</h3>
+
+                    <ul class="lista_circulos">
+                         <li>MySQL</li>
+                         <li>PHP</li>
+                         <li>HTML</li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                         <li>LaTeX</li>
+                    </ul>
+
+                    <div class="popup_acciones">
+                         <button type="button"
+                                   class="boton-popup boton-cerrar"
+                                   onclick="cerrarProyectoEn(1)">
+                              Close
+                         </button>
+
+                         <a class="boton-popup boton-codigo"
+                              href="https://github.com/lolaguti/linha-temporal-pa"
+                              target="_blank"
+                              rel="noopener noreferrer">
+                              View Code on GitHub ↗
+                         </a>
+                    </div>
+
+               </div>
+          </div>
+          
+          <!-- formacion -->
+          <div id="en_formacion" class="seccion">
+               <h2>Education:</h2>
+
+               <div class="div_f" id="en_f3">
+                    <h3>
+                         Bachelor's Degree in Mathematics
+                    </h3>
+                    <h4>
+                         Universidad de Extremadura (2017-2026)
+                    </h4>
+                    <p>
+                         Mathematics graduate from the University of Extremadura, with a background in pure and applied mathematics, including mathematical analysis, algebra, geometry, probability and statistics, differential equations, and numerical methods.
+                    </p>
+                    <p>
+                         Particular emphasis was placed on applied statistics and optimization, with highest honors in Applied Statistical Methods and strong academic results in Operations Research and Numerical Methods. The degree also provided knowledge of programming and computational tools for solving mathematical problems. This academic background fostered strong analytical skills and the ability to approach problems from both mathematical and computational perspectives.
+                    </p>
+                    <p>
+                         During a curricular internship at Caja Rural de Almendralejo, I contributed to the development and maintenance of software applications by implementing new features, fixing issues, and developing automation processes. This experience provided an opportunity to apply programming knowledge to real-world problems in a professional environment.
+                    </p>
+               </div>
+
+               <div class="div_f" id="en_f2">
+                    <h3>
+                         Erasmus +
+                    </h3>
+                    <h4>
+                         Universidade de Coimbra (2023-2024)
+                    </h4>
+                    <p>
+                         Nine-month academic exchange at the University of Coimbra, Portugal, during the 2023–2024 academic year, as part of the Erasmus+ program.
+
+                         This experience broadened mathematical knowledge through master's-level courses in Pure Mathematics, with a focus on mathematical analysis, modelling, optimization, and topology.
+
+                         A particular highlight was the result achieved in Advanced Programming (Programação Avançada), with a grade equivalent to the highest distinction in the Spanish grading system, followed by Mathematical Modelling (Modelação Matemática), with a grade equivalent to 10 in the Spanish grading system.
+
+                         This experience strengthened an interest in the intersection of mathematics and programming, while also improving Portuguese language proficiency and the ability to adapt to an international academic environment.
+                    </p>
+               </div>
+
+               <div class="div_f" id="en_f1">
+                    <h3>
+                         Entrepreneurial Skills Course
+                    </h3>
+                    <h4>
+                         Universidad de Extremadura (2022-2023)
+                    </h4>
+                    <p>
+                         Additional training focused on developing entrepreneurial skills, initiative, and the ability to identify opportunities to turn ideas into projects.Formación complementaria orientada al desarrollo de habilidades emprendedoras, la iniciativa y la identificación de oportunidades para transformar ideas en proyectos.
+                    </p>
+               </div>
+               
+          </div>
+
+          <!-- habilidades -->
+          <div id="en_habilidades" class="seccion">
+               <h2>Habilidades:</h2>
+
+               <div class="div_h" id="en_h_morada">
+
+                    <div id="en_div_icono1">
+                         <img src ="img/icono_i.png">
+                    </div>
+                    
+                    <div class="lista_i">
+                         <h3>
+                              Languages
+                         </h3>
+
+                         <ul>
+                              <li>Spanish (Native)</li>
+                              <li>English (Advanced)</li>
+                              <li>Portuguese (Intermediate)</li>
+                              <li>French (Basic)</li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="div_h" id="en_h_verde">
+
+                    <div id="en_div_icono1">
+                         <img src ="img/icono_p.png">
+                    </div>
+                    
+                    <div class="lista_h">
+                         <h3>
+                              Programming
+                         </h3>
+
+                         <ul>
+                              <li>Python</li>
+                              <li>Java</li>
+                              <li>PHP</li>
+                              <li>Fortran</li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="div_h" id="en_h_coral">
+                    <div id="en_div_icono1">
+                         <img src ="img/icono_d.png">
+                    </div>
+                    
+                    <div class="lista_h">
+                         <h3>
+                              Data and Statistics
+                         </h3>
+
+                         <ul>
+                              <li>SQL</li>
+                              <li>R</li>
+                              <li>RStudio</li>
+                              <li>Jamovi</li>
+                              <li>MATLAB</li>
+                              <li>Excel</li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="div_h" id="en_h_morada">
+                    <div id="en_div_icono1">
+                         <img src ="img/icono_w.png">
+                    </div>
+                    
+                    <div class="lista_h">
+                         <h3>
+                              Web Development
+                         </h3>
+
+                         <ul>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>JavaScript</li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="div_h" id="en_h_verde">
+                    <div id="en_div_icono1">
+                         <img src ="img/icono_o.png">
+                    </div>
+                    
+                    <div class="lista_h">
+                         <h3>
+                              Other Tools
+                         </h3>
+
+                         <ul>
+                              <li>LaTeX</li>
+                              <li>Photoshop</li>
+                         </ul>
+                    </div>
+               </div>
+
+          </div>
+          
+          <!-- contacto -->
+          <div id="en_contacto" class="seccion">
+               <h2>Contact</h2>
+
+               <div id="en_botones_contacto">
+                    <a href="https://www.linkedin.com/in/maria-dolores-gutierrez-rangel-a86b62430">
+                         <img src="img/linkedin.png">
+                         LinkedIn</a>
+                    <a href="https://github.com/lolaguti">
+                         <img src="img/github.png">
+                         GitHub</a>
+               </div>
+
+
+          </div>
      </div>
 
      <script src="index_script.js"></script>

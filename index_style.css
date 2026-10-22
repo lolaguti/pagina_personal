@@ -7,6 +7,7 @@
     --color-extra2: rgb(168, 195, 176);
 
     --opacidad-fondo:35%;
+    --opacidad-boton: 45%;
 
     --fuente-titulo: "DM Serif Display", serif;
     --fuente-texto: "Inter", sans-serif;
@@ -22,6 +23,56 @@ body {
     background-color: var(--color-fondo2);
     color: var(--color-texto);
     line-height: 1.6;
+}
+
+button{
+    cursor: pointer
+}
+
+#botones_idioma {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 8px;
+    background: #f1f1f1;
+    border-color: var(--color2);
+    border-style: solid;
+    border-width: 1px;
+    z-index: 9999;
+}
+
+#botones_idioma button {
+    border: none;
+    background: transparent;
+    padding: 8px 12px;
+
+    font: inherit;
+    font-size: 0.9rem;
+    color: #555;
+
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+#botones_idioma button:hover {
+    background: #e0e0e0;
+    color: #222;
+}
+
+#botones_idioma button.activo {
+    background-color: color-mix(
+        in srgb,
+        var(--color2) var(--opacidad-boton),
+        transparent
+    );
+    color: #222;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -63,7 +114,8 @@ p{
 
 /* PRESENTACIÓN */
 
-#presentacion {
+#presentacion,
+#en_presentacion {
     display: flex;
     flex-direction: row;
     padding-bottom: 25px;
@@ -72,7 +124,8 @@ p{
     margin-top: 0px;
 }
 
-#nombre h1 {
+#nombre h1,
+#en_nombre h1 {
     font-family: var(--fuente-titulo);
     font-size: 60px;
     font-weight: 400;
@@ -82,7 +135,8 @@ p{
     margin-bottom: 25px;
 }
 
-#nombre h1 span {
+#nombre h1 span, 
+#en_nombre h1 span{
     font-family: var(--fuente-titulo);
     font-size: 45px;
     color: var(--color2);
@@ -90,13 +144,15 @@ p{
     margin-left: 15px;
 }
 
-#i_pre {
+#i_pre,
+#en_i_pre {
     width: 55%;
     background-color: var(--color-fondo1);
     padding-right: 10px;
 }
 
-#d_pre {
+#d_pre,
+#en_d_pre {
     width: 45%;
     background-color: var(--color-fondo1);
 
@@ -111,9 +167,11 @@ p{
 
 a {
     display: inline-block;
+    cursor: pointer
 }
 
-#presentacion a {
+#presentacion a,
+#en_presentacion a  {
     margin-right: 15px;
     margin-top: 50px;
     padding: 10px 18px;
@@ -138,7 +196,8 @@ a {
 }
 
 
-#foto_cv {
+#foto_cv,
+#en_foto_cv {
     position: absolute;
 
     width: 48%;
@@ -156,7 +215,8 @@ a {
     z-index: 2;
 }
 
-#fondo1 {
+#fondo1,
+#en_fondo1{
     position: absolute;
 
     width: 100%;
@@ -172,7 +232,8 @@ a {
 
 /* PROYECTOS */
 
-#caja {
+#caja,
+#en_caja {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
@@ -356,7 +417,8 @@ a {
 
 /* FORMACION */
 
-#formacion{
+#formacion,
+#en_formacion {
     display: flex;
     flex-direction: column;
 }
@@ -367,7 +429,8 @@ a {
     margin-bottom: 15px;
 }
 
-#f3{
+#f3,
+#en_f3{
     background-color: color-mix(
         in srgb,
         var(--color2) var(--opacidad-fondo),
@@ -375,7 +438,8 @@ a {
     );
 }
 
-#f2 {
+#f2,
+#en_f2 {
     background-color: color-mix(
         in srgb,
         var(--color-extra2) var(--opacidad-fondo),
@@ -383,7 +447,8 @@ a {
     );
 }
 
-#f1{
+#f1,
+#en_f1{
     background-color: color-mix(
         in srgb,
         var(--color-extra1) var(--opacidad-fondo),
@@ -402,7 +467,8 @@ a {
     border-radius: 15px;
 }
 
-#h_morada{
+#h_morada,
+#en_h_morada{
     background-color: color-mix(
         in srgb,
         var(--color2) var(--opacidad-fondo),
@@ -410,7 +476,8 @@ a {
     );
 }
 
-#h_verde{
+#h_verde,
+#en_h_verde{
     background-color: color-mix(
         in srgb,
         var(--color-extra2) var(--opacidad-fondo),
@@ -418,7 +485,8 @@ a {
     );
 }
 
-#h_coral{
+#h_coral,
+#en_h_coral{
     background-color: color-mix(
         in srgb,
         var(--color-extra1) var(--opacidad-fondo),
@@ -426,7 +494,8 @@ a {
     );
 }
 
-#div_icono1{
+#div_icono1,
+#en_div_icono1{
     height: 60px;
     width: 60px;
     margin-left: 18px;
@@ -475,17 +544,20 @@ a {
     padding: 4px 9px 4px 9px;
 }
 
-#h_morada li{
+#h_morada li,
+#en_h_morada li{
     background-color: var(--color2);
     border: 1px solid var(--color2);
 }
 
-#h_verde li{
+#h_verde li,
+#en_h_verde li{
     background-color: var(--color-extra2);
 
 }
 
-#h_coral li{
+#h_coral li,
+#en_h_coral li{
     background-color: var(--color-extra1);
 
 }
@@ -493,7 +565,8 @@ a {
 
 /* CONTACTO */
 
-#botones_contacto {
+#botones_contacto,
+#en_botones_contacto {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -501,7 +574,8 @@ a {
     margin-top:0px;
 }
 
-#contacto a {
+#contacto a,
+#en_contacto a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -518,7 +592,8 @@ a {
     text-decoration: none;
 }
 
-#contacto img {
+#contacto img,
+#en_contacto img {
     width: 14px;
     height: 14px;
     object-fit: contain;
@@ -558,7 +633,8 @@ a {
 
 
     /* PRESENTACIÓN */
-    #presentacion {
+    #presentacion,
+    #en_presentacion{
         flex-direction: column-reverse;
         height: auto;
         padding-top: 0px;
@@ -566,12 +642,15 @@ a {
     }
 
     #i_pre,
-    #d_pre {
+    #d_pre,
+    #en_i_pre,
+    #en_d_pre {
         width: 100%;
         padding-right: 0;
     }
 
-    #d_pre {
+    #d_pre,
+    #en_d_pre {
         position: relative;
         width: 100%;
         height: 280px;
@@ -582,7 +661,8 @@ a {
         padding: 0px;
     }
 
-    #fondo1 {
+    #fondo1,
+    #en_fondo1 {
         position: absolute;
         width: 100%;
         height: auto;
@@ -594,7 +674,8 @@ a {
         padding: 0px;
     }
 
-    #foto_cv {
+    #foto_cv,
+    #en_foto_cv {
         position: absolute;
         width: 45%;
         max-width: 180px;
@@ -612,19 +693,22 @@ a {
     }
 
 
-    #nombre h1 {
+    #nombre h1,
+    #en_nombre h1 {
         font-size: clamp(36px, 9vw, 48px);
         line-height: 1.1;
         overflow-wrap: anywhere;
         margin-bottom: 20px;
     }
 
-    #nombre h1 span {
+    #nombre h1 span,
+    #en_nombre h1 span {
         font-size: 30px;
         margin-left: 5px;
     }
 
-    #presentacion a {
+    #presentacion a,
+    #en_presentacion a {
         margin-top: 10px;
         margin-right: 5px;
         padding: 10px 12px;
@@ -635,7 +719,8 @@ a {
 
 
     /* PROYECTOS */
-    #caja {
+    #caja,
+    #en_caja {
         grid-template-columns: 1fr;
         gap: 16px;
     }
@@ -712,7 +797,8 @@ a {
         gap: 12px;
     }
 
-    #div_icono1 {
+    #div_icono1,
+    #en_div_icono1 {
         flex: 0 0 42px;
         width: 42px;
         height: 42px;
@@ -748,12 +834,14 @@ a {
 
 
     /* CONTACTO */
-    #botones_contacto {
+    #botones_contacto,
+    #en_botones_contacto {
         flex-wrap: wrap;
         gap: 8px;
     }
 
-    #contacto a {
+    #contacto a,
+    #en_contacto a  {
         width: 115px;
         height: 42px;
         gap: 7px;

@@ -13,10 +13,24 @@
 
 <body>
      <!-- cambio de idioma -->
-     <div id="botones_idioma">
-          <button type="button" class="activo" onclick="cambiarIdioma('es')"> ES </button>
-          <button type="button" onclick="cambiarIdioma('en')"> EN </button>
-     </div>     
+     
+<div id="botones_idioma">
+    <button type="button" id="select_idioma" aria-expanded="false" >
+        <i data-lucide="globe" class="icono_globo" aria-hidden="true"></i>
+        <span id="idioma_actual">ES</span>
+        <span class="flecha_idioma" aria-hidden="true">⌄</span>
+    </button>
+
+    <div id="menu_idioma" hidden>
+        <button type="button" onclick="seleccionarIdioma('es')">
+            Español
+        </button>
+        <button type="button" onclick="seleccionarIdioma('en')">
+            English
+        </button>
+    </div>
+</div>
+    
      
      <div id="español">
           <!-- presentacion -->
@@ -1105,6 +1119,8 @@
      </div>
 
      <script src="index_script.js"></script>
+     <script src="https://unpkg.com/lucide@latest"></script>
+     <script>lucide.createIcons();</script>
      
 
 </body>  

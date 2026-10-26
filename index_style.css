@@ -29,52 +29,90 @@ button{
     cursor: pointer
 }
 
+
 #botones_idioma {
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 1000;
+    font-family: inherit;
+}
+
+#select_idioma {
     display: flex;
-    flex-direction: row;
-    gap: 4px;
-    padding: 4px;
-    border-radius: 8px;
-    background: #f1f1f1;
-    border-color: var(--color2);
-    border-style: solid;
-    border-width: 1px;
-    z-index: 9999;
-}
-
-#botones_idioma button {
-    border: none;
-    background: transparent;
-    padding: 8px 12px;
-
-    font: inherit;
-    font-size: 0.9rem;
-    color: #555;
-
+    align-items: center;
+    justify-content: center;
+    padding: 10px 13px;
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    background: var(--color-fondo2);
+    color: var(--color-texto);
+    font-size: 14px;
     cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#select_idioma:hover {
+    background: var(--color-fondo2);
+}
+
+.icono_globo {
+    width: 18px;
+    height: 18px;
+    color: var(--color2);
+    stroke-width: 1.8;
+}
+
+.flecha_idioma {
+    color: var(--color2);
+    font-size: 18px;
+    position: relative;
+    top: -5px;
+}
+
+#idioma_actual{
+    margin-left: 9px;
+    margin-right: 2px;
+}
+
+#menu_idioma {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 135px;
+    padding: 5px;
+    border: 1px solid var(--color-fondo1);
+    border-radius: 10px;
+    background: var(--color-fondo1);
+    box-shadow: 0 8px 24px rgba(23, 40, 74, 0.12);
+}
+
+#menu_idioma[hidden] {
+    display: none;
+}
+
+#menu_idioma button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
     border-radius: 6px;
-    transition: background 0.2s, color 0.2s;
+    background: transparent;
+    color: var(--color-texto);
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
 }
 
-#botones_idioma button:hover {
-    background: #e0e0e0;
-    color: #222;
+#menu_idioma button:hover {
+    background:var(--color-fondo1);
 }
 
-#botones_idioma button.activo {
-    background-color: color-mix(
-        in srgb,
-        var(--color2) var(--opacidad-boton),
-        transparent
-    );
-    color: #222;
-    font-weight: 600;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+#select_idioma:focus-visible,
+#menu_idioma button:focus-visible {
+    outline: 2px solid var(--color2);
+    outline-offset: 3px;
 }
-
 
 .seccion{
     width: 100%;

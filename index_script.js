@@ -58,13 +58,36 @@ function cambiarIdioma(idioma) {
 
     document.documentElement.lang = idioma;
 
-    document.querySelectorAll("#botones_idioma button").forEach(boton => {
-        boton.classList.toggle(
-            "activo",
-            boton.textContent.trim().toLowerCase() === idioma
-        );
-    });
 }
+
+
+const selector = document.getElementById("select_idioma");
+const menu = document.getElementById("menu_idioma");
+const idiomaActual = document.getElementById("idioma_actual");
+
+selector.addEventListener("click", () => {
+    const abierto = selector.getAttribute("aria-expanded") === "true";
+
+    selector.setAttribute("aria-expanded", String(!abierto));
+    menu.hidden = abierto;
+});
+
+function seleccionarIdioma(idioma) {
+    cambiarIdioma(idioma);
+
+    idiomaActual.textContent = idioma.toUpperCase();
+
+    selector.setAttribute("aria-expanded", "false");
+    menu.hidden = true;
+}
+
+document.addEventListener("click", (evento) => {
+    if (!evento.target.closest("#botones_idioma")) {
+        menu.hidden = true;
+        selector.setAttribute("aria-expanded", "false");
+    }
+});
+
 
 function abrirProyectoEn(numero) {
     const popup = document.getElementById(`en_popup_proyecto${numero}`);
